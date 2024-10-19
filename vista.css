@@ -1,0 +1,326 @@
+body{
+    background-image: url("img/piso.gif");
+    font-family: "Nightmare From Jack", serif;
+
+}
+
+header{
+
+	width: 100%;
+	height: auto;
+	text-align: center;
+
+}
+
+main{
+
+	overflow: hidden;
+	width: 100%;
+
+}
+
+#primera{
+
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+#inicio{
+  display: block;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px 2% 10px 2%;
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 10px;
+  background-color: rgba(117, 115, 166, 0.8);
+}
+
+#nombre{
+	width: auto;
+	height: auto;
+	/*position: absolute;*/
+	/*top: 65%;
+	left: 38%;*/
+	margin:auto;
+	text-align:center;
+
+}
+
+.nombre{
+
+	font-weight: bold;
+	font-size: 60px;
+	color: #D4AF37;
+	text-shadow: 3px 3px 1px #edaa7c ;
+    margin:0;
+}
+
+.texto{
+  font-weight: bold;
+  font-size: 20px;
+  color: #D4AF37;
+
+
+}
+
+.empezar, .reset{
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  background-color: #D4AF37;
+  color: #7573A6 ;
+  border-radius: 20px;
+  border-color: #D4AF37;
+  font-family: "Nightmare From Jack", serif;
+}
+
+#esqueleto{
+
+	width: 10%;
+	height: auto;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0px;
+}
+
+.huesos{
+	width: 100%;
+	margin: auto;
+
+
+}
+
+#murcielagos{
+	width: 20%;
+	height: auto;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0px;
+
+}
+
+.vuela{
+	width: 100%;
+	margin: auto;
+	filter: drop-shadow(5px 5px 10px #FE575F);
+
+}
+
+#img_calabaza{
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#cala1, #cala2{
+
+	height: auto;
+	width: 7%;
+
+
+}
+
+#cala1{
+	float: left;
+	margin-left: 15px;
+}
+
+#cala2{
+	float: right;
+	margin-right: 15px;
+}
+
+.jack1, .jack2{
+
+	width: 100%;
+	margin: auto;
+
+}
+
+#cont_juego{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+    font-family: "Nightmare From Jack", serif;
+
+}
+
+#horca{
+	width: 21%;
+	height: auto;
+	margin: auto;
+
+}
+
+.soga{
+
+	width: 100%;
+	margin: auto;
+
+}
+
+#juego{
+	margin: auto;
+	text-align: center;
+	width:100%;
+	overflow: hidden;
+
+}
+
+#gato{
+	width: 10%;
+	height: auto;
+	float: left;
+}
+
+.gato{
+
+	width: 100%;
+	margin: auto;
+}
+
+
+.oculto{
+
+	font-size: 100px;
+	text-align: center;
+	margin: 0;
+	color: #9C0001;
+	text-shadow: 0px 0px 4px white;
+
+}
+
+#teclado{
+	text-align: center;
+	overflow: hidden;
+	margin: auto;
+	width: 70%;
+	padding-top: 5px;
+	padding-bottom:5px ;
+	margin-top: 10px;
+	background-image: url("img/pergamino.jpg");
+	display: none;
+}
+
+#guardar{
+	float: right;
+	position: absolute;
+	right: 10px;
+	bottom: 250px;
+	height: auto;
+	width: auto;
+	background-color: #eed09d;
+	display: none;
+
+}
+
+.guardar{
+
+	font-size: 40px;
+	color: #9C0001;
+
+
+}
+
+
+#cont_teclas{
+
+	width: 52%;
+	overflow: hidden;
+	margin: auto;
+	padding-left: 4%;
+	padding-right: 4%;
+
+}
+
+.boton{
+	width: 7.7%;
+	height: 41px;
+	font-size: 20px;
+	border-radius: 100px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	background-color: #7573A6;
+	border-style: solid;
+	border-width: 3px;
+	color: #D4AF37 ;
+	border-color: #D4AF37;
+	font-family: "Nightmare From Jack", serif;
+
+
+}
+
+#fin{
+	display: none;
+	height: auto;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#muerte{
+	width: 10%;
+	height: auto;
+	margin: auto;
+}
+
+.muerte{
+	width: auto;
+	margin: auto;
+
+}
+
+
+
+.era, .resultado{
+
+	font-size: 50px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: #9C0001;
+	text-shadow:0px 0px 4px white;
+}
+
+.resultado{
+	color: #224373 ;
+	font-weight: bold;
+
+}
+
+.info{
+    color: #fd8f00;
+    font-size: 20px;
+    text-shadow: 1px 2px 2px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Fuentes*/
+
+@font-face{
+
+	font-family: Nightmare From Jack;
+	src: url("fuentes/Ghost\ Activity\ Blood.otf");
+
+}

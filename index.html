@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ahorcado</title>
+		<link href="vista.css" rel="stylesheet" type="text/css">
+		<link href="img/icono.png" rel="icon">
+
+	</head>
+	<body>
+		<header>
+			<img class="velas" src="img/velas.gif" alt="candelabro">
+		</header>
+			<div id="primera">	
+				<div id="inicio">
+						<p class="texto">Para librarte de la muerte debes acertar la palabra o morirás ahorcado, y solo tienes 6 (seis) intentos.<br>¡BUENA SUERTE!</p>
+						<button type="button" id="jugar" onmouseover="mirar()" onmouseout="nomirar()" onclick="empezar()" class="empezar">Jugar</button>	
+					</div>
+					<br>
+					<div id="nombre">
+						<p class="nombre">AHORCADO</p>
+					</div>
+					<div id="esqueleto">
+						<img class="huesos"  src="img/esquelto.png" alt="esqueleto ahorcado">
+					</div>
+					<div id="murcielagos">
+						<img class="vuela" src="img/murcielago.png" alt="murcielagos">
+					</div>
+						<div id="img_calabaza">
+							<div id="cala1">
+								<img class="jack1"  src="img/jack1.png" alt="jack1">
+							</div>
+							<div id="cala2">
+								<img class="jack2"  src="img/jack2.png" alt="jack2">
+							</div>
+						</div>
+			</div>		
+			<main>
+					<div id="cont_juego">
+							<div id="juego">
+								<div id="horca">
+									<img src="img/0.png" id="ahorcado" class="soga" alt="imagen del ahorcado 0">
+								</div>
+								<div id="gato">
+									<img class="gato" src="img/gato.gif" alt="gato y calabaza">
+								</div>
+									<p id="palabra" class="oculto"></p>
+									
+							</div>
+					</div>
+					<div id="fin">
+						<div id="muerte">
+							<img id="img" class="muerte" src="img/perder.png" alt="imagen de perder ahorcado">
+						</div>
+						<p id="resultado" class="resultado"></p>
+						<p id="era" class="era"></p>
+						<button id="reiniciar" type="button" class="reset" onmouseover="mirar()" onmouseout="nomirar()" onclick="reiniciar()">Volver a jugar</button>
+					</div>
+			</main>
+			<footer>
+				<div id="teclado">
+					<div id="cont_teclas">
+							<button type="button" id="A" class="boton" onmouseover="sobre('A')" onmouseout="fuera('A')" onclick="jugar('A')">A</button>
+							<button type="button" id="B" class="boton" onmouseover="sobre('B')" onmouseout="fuera('B')" onclick="jugar('B')">B</button>
+							<button type="button" id="C" class="boton" onmouseover="sobre('C')" onmouseout="fuera('C')" onclick="jugar('C')">C</button>
+							<button type="button" id="D" class="boton" onmouseover="sobre('D')" onmouseout="fuera('D')" onclick="jugar('D')">D</button>
+							<button type="button" id="E" class="boton" onmouseover="sobre('E')" onmouseout="fuera('E')" onclick="jugar('E')">E</button>
+							<button type="button" id="F" class="boton" onmouseover="sobre('F')" onmouseout="fuera('F')" onclick="jugar('F')">F</button>
+							<button type="button" id="G" class="boton" onmouseover="sobre('G')" onmouseout="fuera('G')" onclick="jugar('G')">G</button>
+							<button type="button" id="H" class="boton" onmouseover="sobre('H')" onmouseout="fuera('H')" onclick="jugar('H')">H</button>
+							<button type="button" id="I" class="boton" onmouseover="sobre('I')" onmouseout="fuera('I')" onclick="jugar('I')">I</button>
+							<button type="button" id="J" class="boton" onmouseover="sobre('J')" onmouseout="fuera('J')" onclick="jugar('J')">J</button>
+							<button type="button" id="K" class="boton" onmouseover="sobre('K')" onmouseout="fuera('K')" onclick="jugar('K')">K</button>
+							<button type="button" id="L" class="boton" onmouseover="sobre('L')" onmouseout="fuera('L')" onclick="jugar('L')">L</button>
+							<button type="button" id="M" class="boton" onmouseover="sobre('M')" onmouseout="fuera('M')" onclick="jugar('M')">M</button>
+							<button type="button" id="N" class="boton" onmouseover="sobre('N')" onmouseout="fuera('N')" onclick="jugar('N')">N</button>
+							<button type="button" id="Ñ" class="boton" onmouseover="sobre('Ñ')" onmouseout="fuera('Ñ')" onclick="jugar('Ñ')">Ñ</button>
+							<button type="button" id="O" class="boton" onmouseover="sobre('O')" onmouseout="fuera('O')" onclick="jugar('O')">O</button>
+							<button type="button" id="P" class="boton" onmouseover="sobre('P')" onmouseout="fuera('P')" onclick="jugar('P')">P</button>
+							<button type="button" id="Q" class="boton" onmouseover="sobre('Q')" onmouseout="fuera('Q')" onclick="jugar('Q')">Q</button>
+							<button type="button" id="R" class="boton" onmouseover="sobre('R')" onmouseout="fuera('R')" onclick="jugar('R')">R</button>
+							<button type="button" id="S" class="boton" onmouseover="sobre('S')" onmouseout="fuera('S')" onclick="jugar('S')">S</button>
+							<button type="button" id="T" class="boton" onmouseover="sobre('T')" onmouseout="fuera('T')" onclick="jugar('T')">T</button>
+							<button type="button" id="U" class="boton" onmouseover="sobre('U')" onmouseout="fuera('U')" onclick="jugar('U')">U</button>
+							<button type="button" id="V" class="boton" onmouseover="sobre('V')" onmouseout="fuera('V')" onclick="jugar('V')">V</button>
+							<button type="button" id="W" class="boton" onmouseover="sobre('W')" onmouseout="fuera('W')" onclick="jugar('W')">W</button>
+							<button type="button" id="X" class="boton" onmouseover="sobre('X')" onmouseout="fuera('X')" onclick="jugar('X')">X</button>
+							<button type="button" id="Y" class="boton" onmouseover="sobre('Y')" onmouseout="fuera('Y')" onclick="jugar('Y')">Y</button>
+							<button type="button" id="Z" class="boton" onmouseover="sobre('Z')" onmouseout="fuera('Z')" onclick="jugar('Z')">Z</button>
+						</div>
+				</div>
+				<div id="muestra">
+						<p id="guardar" class="guardar"></p>
+					</div>
+
+			</footer>
+	</body>
+	<script type="text/javascript" src="js.js"></script>
+	</html>
